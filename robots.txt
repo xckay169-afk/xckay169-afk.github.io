@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# Заміни адресу на свою після деплою
+Sitemap: https://YOUR-NAME.github.io/portfolio/sitemap.xml

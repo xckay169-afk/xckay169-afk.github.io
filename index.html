@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO: те, що показує Google у видачі. Змінюй тексти під себе ===== -->
+<title>photoraf_xckay — фотограф і ретушер у Запоріжжі</title>
+<meta name="description" content="Репортажна та портретна зйомка в Запоріжжі. Кольорокорекція, шумодав і ретуш RAW-файлів за 2 доби. Репортаж — 350 грн/год.">
+<!-- Після деплою заміни адресу на свою: https://ТВІЙ_НІК.github.io/НАЗВА_РЕПО/ -->
+<link rel="canonical" href="https://YOUR-NAME.github.io/portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="photoraf_xckay — фотограф і ретушер">
+<meta property="og:description" content="Репортаж, портрети та обробка RAW за 2 доби. Запоріжжя.">
+<meta property="og:image" content="https://YOUR-NAME.github.io/portfolio/photos/hero.jpg">
+<!-- Підтвердження сайту в Google Search Console: встав сюди мета-тег, який видасть Google -->
+<!-- <meta name="google-site-verification" content="КОД_З_SEARCH_CONSOLE"> -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Photographer","name":"photoraf_xckay","telephone":"+380502854929","areaServed":"Запоріжжя",
+ "url":"https://YOUR-NAME.github.io/portfolio/","sameAs":["https://t.me/photoraf_xckay"],
+ "priceRange":"350 грн/год"}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+  // Кольори сайту: змінюй тут, вони підхопляться скрізь
+  tailwind.config = { theme: { extend: {
+    fontFamily: { sans: ['Inter','system-ui','sans-serif'] },
+    colors: { ink:'#0B0B0C', card:'#161618', amber:'#F59E0B' } } } }
+</script>
+<style>
+  body{background:#0B0B0C;color:#fff}
+  section[id]{scroll-margin-top:80px}                 /* щоб шапка не перекривала заголовок при прокрутці */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.show{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+  .ba{touch-action:pan-y;user-select:none;-webkit-user-select:none}
+  :focus-visible{outline:2px solid #F59E0B;outline-offset:3px}
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- ================= 1. ШАПКА ================= -->
+<header class="fixed top-0 inset-x-0 z-40 bg-ink/80 backdrop-blur border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#top" class="font-bold tracking-tight text-lg">photoraf_xckay</a> <!-- ЛОГОТИП: впиши ім’я/нік -->
+    <nav class="hidden md:flex gap-8 text-sm text-white/70">
+      <a href="#portfolio" class="hover:text-white">Портфоліо</a>
+      <a href="#before-after" class="hover:text-white">До/Після</a>
+      <a href="#services" class="hover:text-white">Послуги</a>
+    </nav>
+    <a href="https://t.me/photoraf_xckay" target="_blank" rel="noopener"
+       class="bg-amber text-black text-sm font-semibold px-4 py-2 rounded-full hover:brightness-110 transition">Зв’язатися</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- ================= 2. ПЕРШИЙ ЕКРАН ================= -->
+<section class="relative min-h-screen flex items-center pt-16 overflow-hidden">
+  <!-- ГОЛОВНЕ ФОТО: заміни photos/hero.jpg на свій горизонтальний кадр -->
+  <img src="photos/hero.jpg" alt="Портрет на заході сонця в контражурі" class="absolute inset-0 w-full h-full object-cover object-[70%_center]">
+  <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/20"></div>
+  <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-ink to-transparent"></div>
+  <div class="relative max-w-6xl mx-auto px-5 py-20 w-full">
+    <h1 class="max-w-2xl text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight">
+      Репортажна та портретна зйомка. Пакетна обробка фото</h1>
+    <p class="mt-6 max-w-xl text-lg text-white/75 leading-relaxed">
+      Ловлю живі емоції в русі на турнірах і заходах у Запоріжжі. Віддалено роблю глибоку кольорокорекцію, чистий шумодав і ретуш RAW-файлів за 2 доби.</p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a href="https://t.me/photoraf_xckay" target="_blank" rel="noopener"
+         class="bg-amber text-black font-semibold px-7 py-3.5 rounded-full hover:brightness-110 transition">Написати в Telegram</a>
+      <a href="#portfolio" class="border border-white/25 px-7 py-3.5 rounded-full font-medium hover:bg-white/10 transition">Дивитися роботи</a>
+    </div>
+    <!-- ТЕЛЕФОН: зміни номер тут, у футері та в JSON-LD (telephone) угорі файлу -->
+    <p class="mt-6 text-white/60">Або зателефонуй: <a href="tel:+380502854929" class="text-white font-medium hover:text-amber">050 285 4929</a></p>
+  </div>
+</section>
+
+<!-- ================= 3. ПОРТФОЛІО ================= -->
+<section id="portfolio" class="max-w-6xl mx-auto px-5 py-24">
+  <div class="reveal flex flex-wrap items-end justify-between gap-6 mb-10">
+    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Портфоліо</h2>
+    <!-- Фільтри: data-filter має збігатися з data-cat у фото -->
+    <div id="filters" class="flex flex-wrap gap-2 text-sm">
+      <button data-filter="all" class="f px-4 py-2 rounded-full bg-amber text-black font-medium">Усі роботи</button>
+      <button data-filter="dynamic" class="f px-4 py-2 rounded-full bg-card text-white/80 hover:text-white">Динаміка</button>
+      <button data-filter="reportage" class="f px-4 py-2 rounded-full bg-card text-white/80 hover:text-white">Репортаж</button>
+      <button data-filter="portrait" class="f px-4 py-2 rounded-full bg-card text-white/80 hover:text-white">Портрети</button>
+    </div>
+  </div>
+
+  <!-- Сітка 8 фото. Файли лежать у папці photos/: photo1.jpg ... photo8.jpg.
+       Щоб змінити категорію — зміни data-cat на "dynamic", "reportage" або "portrait" -->
+  <div id="grid" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+    <!-- Динаміка (турнір). object-[48%_center] — яку частину горизонтального кадру показати в картці -->
+    <figure data-cat="dynamic" class="reveal item cursor-zoom-in overflow-hidden rounded-2xl bg-card aspect-[4/5]">
+      <img src="photos/photo7.jpg" alt="Юна танцюристка в помаранчевій сукні на турнірі" loading="lazy" class="w-full h-full object-cover object-[48%_center] hover:scale-105 transition duration-500"></figure>
+    <figure data-cat="dynamic" class="reveal item cursor-zoom-in overflow-hidden rounded-2xl bg-card aspect-[4/5]">
+      <img src="photos/photo8.jpg" alt="Танцюристка у вихорі помаранчевої сукні на паркеті" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-500"></figure>
+    <figure data-cat="portrait" class="reveal item cursor-zoom-in overflow-hidden rounded-2xl bg-card aspect-[4/5]">
+      <img src="photos/photo1.jpg" alt="Студійний портрет у жорсткому боковому світлі" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-500"></figure>
+    <figure data-cat="portrait" class="reveal item cursor-zoom-in overflow-hidden rounded-2xl bg-card aspect-[4/5]">
+      <img src="photos/photo2.jpg" alt="Домашній портрет із блокнотом на дивані" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-500"></figure>
+    <figure data-cat="portrait" class="reveal item cursor-zoom-in overflow-hidden rounded-2xl bg-card aspect-[4/5]">
+      <img src="photos/photo3.jpg" alt="Портрет біля вікна в синю годину" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-500"></figure>
+    <figure data-cat="reportage" class="reveal item cursor-zoom-in overflow-hidden rounded-2xl bg-card aspect-[4/5]">
+      <img src="photos/photo4.jpg" alt="Вулична зйомка біля фонтану" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-500"></figure>
+    <figure data-cat="reportage" class="reveal item cursor-zoom-in overflow-hidden rounded-2xl bg-card aspect-[4/5]">
+      <img src="photos/photo5.jpg" alt="Силует і бризки фонтану в контражурі" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-500"></figure>
+    <figure data-cat="portrait" class="reveal item cursor-zoom-in overflow-hidden rounded-2xl bg-card aspect-[4/5]">
+      <img src="photos/photo6.jpg" alt="Портрет на заході сонця з відблисками в об’єктиві" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-500"></figure>
+  </div>
+</section>
+
+<!-- ================= 4. ДО / ПІСЛЯ ================= -->
+<section id="before-after" class="bg-card/40 border-y border-white/5">
+  <div class="max-w-4xl mx-auto px-5 py-24">
+    <div class="reveal mb-10">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">До і після</h2>
+      <p class="mt-3 text-white/65">Потягни повзунок: ліворуч вихідник, праворуч кадр після кольорокорекції та шумодаву.</p>
+    </div>
+    <!-- Слайдер. Шляхи до фото: photos/before.jpg (вихідник) і photos/after.jpg (результат).
+         Обидва файли мають бути одного розміру та кадрування -->
+    <div id="ba" class="ba reveal relative overflow-hidden rounded-2xl cursor-ew-resize aspect-[3/2] bg-card">
+      <img src="photos/after.jpg" alt="Після обробки" class="absolute inset-0 w-full h-full object-cover" draggable="false">
+      <img id="baBefore" src="photos/before.jpg" alt="До обробки" class="absolute inset-0 w-full h-full object-cover" style="clip-path:inset(0 50% 0 0)" draggable="false">
+      <span class="absolute left-3 top-3 bg-black/60 text-xs px-3 py-1 rounded-full">До</span>
+      <span class="absolute right-3 top-3 bg-black/60 text-xs px-3 py-1 rounded-full">Після</span>
+      <div id="baLine" class="absolute inset-y-0 w-0.5 bg-white" style="left:50%">
+        <div class="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-amber text-black grid place-items-center font-bold shadow-lg">&#8596;</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. ПОСЛУГИ ТА ЦІНИ ================= -->
+<section id="services" class="max-w-6xl mx-auto px-5 py-24">
+  <h2 class="reveal text-3xl sm:text-4xl font-bold tracking-tight mb-12">Послуги та ціни</h2>
+  <div class="grid md:grid-cols-3 gap-5">
+
+    <!-- Тариф 1: змінюй ціну та пункти списку прямо тут -->
+    <article class="reveal bg-card rounded-2xl p-7 flex flex-col">
+      <h3 class="text-xl font-semibold">Пакетна обробка <span class="block text-sm font-normal text-white/50">Віддалено</span></h3>
+      <p class="mt-5 text-3xl font-bold text-amber">300 грн</p>
+      <ul class="mt-6 space-y-3 text-white/75 text-sm flex-1">
+        <li>До 20 фотографій</li><li>Кольорокорекція та робота зі світлом</li>
+        <li>AI-шумодав для темних кадрів</li><li>Термін готовності: 2 доби</li></ul>
+      <a href="https://t.me/photoraf_xckay" target="_blank" rel="noopener" class="mt-8 text-center border border-amber text-amber font-semibold py-3 rounded-full hover:bg-amber hover:text-black transition">Замовити в Telegram</a>
+    </article>
+
+    <!-- Тариф 2 (виділений рамкою) -->
+    <article class="reveal bg-card rounded-2xl p-7 flex flex-col ring-1 ring-amber/60">
+      <h3 class="text-xl font-semibold">Репортаж / Прогулянка <span class="block text-sm font-normal text-white/50">Запоріжжя</span></h3>
+      <p class="mt-5 text-3xl font-bold text-amber">350 грн <span class="text-base font-medium text-white/60">/ година</span></p>
+      <ul class="mt-6 space-y-3 text-white/75 text-sm flex-1">
+        <li>Зйомка турнірів, заходів або прогулянок</li><li>Усі вдалі кадри в базовій кольорокорекції</li>
+        <li>15 найкращих фото в детальній ретуші</li><li>Готовність: 4–5 діб</li></ul>
+      <a href="https://t.me/photoraf_xckay" target="_blank" rel="noopener" class="mt-8 text-center bg-amber text-black font-semibold py-3 rounded-full hover:brightness-110 transition">Замовити в Telegram</a>
+    </article>
+
+    <!-- Тариф 3 -->
+    <article class="reveal bg-card rounded-2xl p-7 flex flex-col">
+      <h3 class="text-xl font-semibold">Індивідуальне замовлення</h3>
+      <p class="mt-5 text-3xl font-bold text-amber">Договірна</p>
+      <ul class="mt-6 space-y-3 text-white/75 text-sm flex-1">
+        <li>Зйомка великих змагань або нестандартні завдання</li><li>Обговоримо деталі та обсяг в особистих повідомленнях</li></ul>
+      <a href="https://t.me/photoraf_xckay" target="_blank" rel="noopener" class="mt-8 text-center border border-amber text-amber font-semibold py-3 rounded-full hover:bg-amber hover:text-black transition">Замовити в Telegram</a>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 6. ПРО ПІДХІД І ТЕХНІКУ ================= -->
+<section class="max-w-4xl mx-auto px-5 pb-24">
+  <div class="reveal bg-card rounded-2xl p-8 sm:p-12">
+    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Про підхід і техніку</h2>
+    <!-- Текст нижче — з твого ТЗ. Якщо в тебе не повний кадр або інша оптика, виправ! -->
+    <p class="mt-5 text-white/75 leading-relaxed max-w-2xl">Знімаю на повнокадрову камеру зі світлосильною оптикою f/2.8 — це дозволяє отримувати чисті, різкі кадри в динаміці навіть у темних залах без спалаху. Уся обробка проходить в Adobe Lightroom і Photoshop зі збереженням природних кольорів.</p>
+  </div>
+</section>
+</main>
+
+<!-- ================= ПІДВАЛ ================= -->
+<footer class="border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-5 py-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+    <a href="https://t.me/photoraf_xckay" target="_blank" rel="noopener" class="bg-amber text-black font-semibold px-6 py-3 rounded-full hover:brightness-110 transition">Написати в Telegram</a>
+    <a href="tel:+380502854929" class="text-white/80 font-medium hover:text-amber">050 285 4929</a>
+    <p class="text-white/40 text-sm">&copy; <span id="year"></span> photoraf_xckay</p>
+  </div>
+</footer>
+
+<!-- Лайтбокс (повноекранний перегляд) -->
+<div id="lb" class="fixed inset-0 z-50 hidden bg-black/95 items-center justify-center p-4 cursor-zoom-out">
+  <img id="lbImg" src="" alt="" class="max-w-full max-h-[92vh] rounded-lg object-contain">
+  <button id="lbX" aria-label="Закрити" class="absolute top-4 right-5 text-4xl text-white/70 hover:text-white">&times;</button>
+</div>
+
+<script>
+// ---- Поява блоків при прокрутці ----
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ---- Фільтри галереї ----
+const items = document.querySelectorAll('.item');
+document.querySelectorAll('.f').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.f').forEach(x => x.className = 'f px-4 py-2 rounded-full bg-card text-white/80 hover:text-white');
+  b.className = 'f px-4 py-2 rounded-full bg-amber text-black font-medium';
+  items.forEach(i => i.style.display = (b.dataset.filter === 'all' || i.dataset.cat === b.dataset.filter) ? '' : 'none');
+}));
+
+// ---- Лайтбокс ----
+const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+const closeLb = () => { lb.classList.add('hidden'); lb.classList.remove('flex'); };
+items.forEach(i => i.addEventListener('click', () => {
+  const im = i.querySelector('img'); lbImg.src = im.src; lbImg.alt = im.alt;
+  lb.classList.remove('hidden'); lb.classList.add('flex');
+}));
+lb.addEventListener('click', closeLb);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+
+// ---- Слайдер До/Після (миша і палець) ----
+const ba = document.getElementById('ba'), before = document.getElementById('baBefore'), line = document.getElementById('baLine');
+function setPos(x) {
+  const r = ba.getBoundingClientRect();
+  const p = Math.min(100, Math.max(0, (x - r.left) / r.width * 100));
+  before.style.clipPath = `inset(0 ${100 - p}% 0 0)`; line.style.left = p + '%';
+}
+let drag = false;
+ba.addEventListener('pointerdown', e => { drag = true; ba.setPointerCapture(e.pointerId); setPos(e.clientX); });
+ba.addEventListener('pointermove', e => { if (drag) setPos(e.clientX); });
+['pointerup', 'pointercancel'].forEach(t => ba.addEventListener(t, () => drag = false));
+
+// ---- Рік у підвалі ----
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
