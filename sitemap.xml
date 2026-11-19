@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Заміни адресу на свою після деплою -->
-  <url><loc>https://YOUR-NAME.github.io/portfolio/</loc></url>
+  <url>
+    <loc>https://xckay169-afk.github.io/</loc>
+  </url>
 </urlset>
